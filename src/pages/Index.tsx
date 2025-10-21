@@ -30,8 +30,8 @@ const Index = () => {
 
       <section id="hero" className="pt-32 pb-20 px-4 bg-gradient-to-br from-[#2a1f1a] to-[#3d2d24]">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="z-20 relative">
               <Badge className="mb-4 text-lg px-4 py-2">Старт через 7 дней</Badge>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
                 Станьте <span className="text-accent">высокооплачиваемым</span> фитнес-тренером
