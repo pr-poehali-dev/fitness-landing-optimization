@@ -64,11 +64,10 @@ const Index = () => {
               </div>
             </div>
             <div className="relative flex justify-center items-center">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 via-accent/10 to-transparent rounded-full blur-3xl"></div>
               <img 
                 src="https://cdn.poehali.dev/projects/1423d94b-75c4-4c5b-959d-a841a1205259/files/88938a5a-286a-41ca-84be-f7fbd07f0a64.jpg" 
                 alt="Профессиональный фитнес-тренер"
-                className="relative z-10 drop-shadow-2xl max-h-[600px] object-contain"
+                className="relative z-10 drop-shadow-2xl max-h-[600px] object-contain mix-blend-lighten"
               />
             </div>
           </div>
