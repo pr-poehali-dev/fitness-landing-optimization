@@ -9,34 +9,34 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <div className="min-h-screen bg-gradient-to-b from-[#2a1f1a] via-[#3d2d24] to-[#4a3529]">
+      <nav className="fixed top-0 w-full bg-[#2a1f1a]/95 backdrop-blur-sm shadow-lg z-50 border-b border-accent/20">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-primary">ISAFE Academy</div>
+          <div className="text-2xl font-bold text-accent">ISAFE Academy</div>
           <div className="hidden md:flex gap-6">
-            <a onClick={() => scrollToSection('hero')} className="cursor-pointer hover:text-primary transition">Главная</a>
-            <a onClick={() => scrollToSection('benefits')} className="cursor-pointer hover:text-primary transition">Преимущества</a>
-            <a onClick={() => scrollToSection('program')} className="cursor-pointer hover:text-primary transition">Программа</a>
-            <a onClick={() => scrollToSection('results')} className="cursor-pointer hover:text-primary transition">Результаты</a>
-            <a onClick={() => scrollToSection('reviews')} className="cursor-pointer hover:text-primary transition">Отзывы</a>
-            <a onClick={() => scrollToSection('pricing')} className="cursor-pointer hover:text-primary transition">Тарифы</a>
-            <a onClick={() => scrollToSection('contacts')} className="cursor-pointer hover:text-primary transition">Контакты</a>
+            <a onClick={() => scrollToSection('hero')} className="cursor-pointer text-accent/80 hover:text-accent transition">Главная</a>
+            <a onClick={() => scrollToSection('benefits')} className="cursor-pointer text-accent/80 hover:text-accent transition">Преимущества</a>
+            <a onClick={() => scrollToSection('program')} className="cursor-pointer text-accent/80 hover:text-accent transition">Программа</a>
+            <a onClick={() => scrollToSection('results')} className="cursor-pointer text-accent/80 hover:text-accent transition">Результаты</a>
+            <a onClick={() => scrollToSection('reviews')} className="cursor-pointer text-accent/80 hover:text-accent transition">Отзывы</a>
+            <a onClick={() => scrollToSection('pricing')} className="cursor-pointer text-accent/80 hover:text-accent transition">Тарифы</a>
+            <a onClick={() => scrollToSection('contacts')} className="cursor-pointer text-accent/80 hover:text-accent transition">Контакты</a>
           </div>
-          <Button onClick={() => scrollToSection('pricing')} size="lg" className="hidden md:flex">
+          <Button onClick={() => scrollToSection('pricing')} size="lg" className="hidden md:flex bg-accent hover:bg-accent/90 text-primary">
             Записаться на курс
           </Button>
         </div>
       </nav>
 
-      <section id="hero" className="pt-32 pb-20 px-4">
+      <section id="hero" className="pt-32 pb-20 px-4 bg-gradient-to-br from-[#2a1f1a] to-[#3d2d24]">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4 text-lg px-4 py-2">Старт через 7 дней</Badge>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Станьте <span className="text-primary">высокооплачиваемым</span> фитнес-тренером
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
+                Станьте <span className="text-accent">высокооплачиваемым</span> фитнес-тренером
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-gray-300 mb-8">
                 Получите престижную профессию за 2 месяца и зарабатывайте от <span className="font-bold text-accent">100 000 ₽</span> в месяц
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -50,16 +50,16 @@ const Index = () => {
               </div>
               <div className="grid grid-cols-3 gap-4">
                 <div>
-                  <div className="text-3xl font-bold text-primary">2500+</div>
-                  <div className="text-sm text-muted-foreground">Выпускников</div>
+                  <div className="text-3xl font-bold text-accent">2500+</div>
+                  <div className="text-sm text-gray-400">Выпускников</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary">98%</div>
-                  <div className="text-sm text-muted-foreground">Трудоустроены</div>
+                  <div className="text-3xl font-bold text-accent">98%</div>
+                  <div className="text-sm text-gray-400">Трудоустроены</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary">150 000₽</div>
-                  <div className="text-sm text-muted-foreground">Средний доход</div>
+                  <div className="text-3xl font-bold text-accent">150 000₽</div>
+                  <div className="text-sm text-gray-400">Средний доход</div>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="benefits" className="py-20 bg-white">
+      <section id="benefits" className="py-20 bg-[#f5f0eb]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Почему выбирают нас</h2>
           <p className="text-xl text-center text-muted-foreground mb-16">Инвестиция в свое будущее с гарантированным результатом</p>
@@ -155,10 +155,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="program" className="py-20">
+      <section id="program" className="py-20 bg-gradient-to-b from-[#2a1f1a] to-[#3d2d24]">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Программа обучения</h2>
-          <p className="text-xl text-center text-muted-foreground mb-16">Комплексная подготовка за 8 недель</p>
+          <h2 className="text-4xl font-bold text-center mb-4 text-white">Программа обучения</h2>
+          <p className="text-xl text-center text-gray-300 mb-16">Комплексная подготовка за 8 недель</p>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
@@ -278,7 +278,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="results" className="py-20 bg-white">
+      <section id="results" className="py-20 bg-[#f5f0eb]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Что вы получите</h2>
           <p className="text-xl text-center text-muted-foreground mb-16">Конкретные результаты после обучения</p>
@@ -355,7 +355,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="reviews" className="py-20">
+      <section id="reviews" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Отзывы выпускников</h2>
           <p className="text-xl text-center text-muted-foreground mb-16">Истории успеха наших студентов</p>
@@ -430,7 +430,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="pricing" className="py-20 bg-gradient-to-b from-white to-primary/5">
+      <section id="pricing" className="py-20 bg-gradient-to-b from-[#f5f0eb] to-[#e8dfd5]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Тарифы обучения</h2>
           <p className="text-xl text-center text-muted-foreground mb-16">Выберите подходящий вариант инвестиции в свое будущее</p>
@@ -547,44 +547,44 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 bg-white">
+      <section id="contacts" className="py-20 bg-[#2a1f1a]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl font-bold mb-6">Готовы начать?</h2>
-                <p className="text-xl text-muted-foreground mb-8">
+                <h2 className="text-4xl font-bold mb-6 text-white">Готовы начать?</h2>
+                <p className="text-xl text-gray-300 mb-8">
                   Свяжитесь с нами прямо сейчас и получите бесплатную консультацию по программе обучения
                 </p>
                 
                 <div className="space-y-6">
                   <div className="flex gap-4 items-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Icon name="Phone" className="text-primary" size={24} />
+                    <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                      <Icon name="Phone" className="text-accent" size={24} />
                     </div>
                     <div>
-                      <div className="font-bold">Телефон</div>
-                      <a href="tel:+79001234567" className="text-primary hover:underline">+7 (900) 123-45-67</a>
+                      <div className="font-bold text-white">Телефон</div>
+                      <a href="tel:+79001234567" className="text-accent hover:underline">+7 (900) 123-45-67</a>
                     </div>
                   </div>
 
                   <div className="flex gap-4 items-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Icon name="Mail" className="text-primary" size={24} />
+                    <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                      <Icon name="Mail" className="text-accent" size={24} />
                     </div>
                     <div>
-                      <div className="font-bold">Email</div>
-                      <a href="mailto:info@isafe-academy.ru" className="text-primary hover:underline">info@isafe-academy.ru</a>
+                      <div className="font-bold text-white">Email</div>
+                      <a href="mailto:info@isafe-academy.ru" className="text-accent hover:underline">info@isafe-academy.ru</a>
                     </div>
                   </div>
 
                   <div className="flex gap-4 items-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Icon name="MessageCircle" className="text-primary" size={24} />
+                    <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                      <Icon name="MessageCircle" className="text-accent" size={24} />
                     </div>
                     <div>
-                      <div className="font-bold">Telegram</div>
-                      <a href="https://t.me/isafe_academy" className="text-primary hover:underline">@isafe_academy</a>
+                      <div className="font-bold text-white">Telegram</div>
+                      <a href="https://t.me/isafe_academy" className="text-accent hover:underline">@isafe_academy</a>
                     </div>
                   </div>
                 </div>
