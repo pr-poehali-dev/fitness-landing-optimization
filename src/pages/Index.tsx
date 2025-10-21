@@ -65,9 +65,9 @@ const Index = () => {
             </div>
             <div className="relative flex justify-center items-center">
               <img 
-                src="https://cdn.poehali.dev/projects/1423d94b-75c4-4c5b-959d-a841a1205259/files/88938a5a-286a-41ca-84be-f7fbd07f0a64.jpg" 
+                src="https://cdn.poehali.dev/projects/1423d94b-75c4-4c5b-959d-a841a1205259/files/587447b9-484f-47bd-91af-a657cc71f51f.jpg" 
                 alt="Профессиональный фитнес-тренер"
-                className="relative z-10 drop-shadow-2xl max-h-[600px] object-contain mix-blend-lighten"
+                className="relative z-10 drop-shadow-2xl max-h-[600px] object-contain"
               />
             </div>
           </div>
